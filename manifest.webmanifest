@@ -1,0 +1,21 @@
+{
+    "name": "Wajeeez",
+    "short_name": "Wajeeez",
+    "start_url": ".",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "w.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "w.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#333",
+    "display": "standalone"
+  }

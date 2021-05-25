@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>WAJAHAT ALI-ANDROID & WEB DEV</title>
+    <link rel="icon" href="w.png" type="image/icon type">
+
+    
+    <link rel="manifest" href=".manifest.webmanifest">
+    <script src=".index.js" type="module"></script>
+
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        body,
+        html {
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-image: url("b3.jpg");
+            margin-right: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+
+            /* Center and scale the image nicely */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+
+
+
+
+        .hd {
+
+            font-family: 'Potta One';
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+
+
+            text-align: center;
+            margin: 0;
+            top: 40%;
+            left: 50%;
+            padding: 0;
+            position: absolute;
+            transform: translate(-50%);
+
+
+        }
+
+        h4 {
+
+            font-size: 35px;
+        }
+
+        h2 {
+            color:#ff00bb;
+            font-size: 15px;
+        }
+
+
+        .card {
+
+            position: absolute;
+            width: 800px;
+            height: 440px;
+            margin: flex;
+            top: 130%;
+
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #780206, #061161);
+
+
+        }
+
+        .card img {
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 550px;
+            transition: 0.5s;
+            transform: translate(-50%);
+
+        }
+
+        .card:hover img {
+
+            left: 20%;
+            height: 70vh;
+        }
+
+        .card .content {
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            font-weight: 100;
+            font-size: x-large;
+            padding: 20px 20px 20px 40px;
+            visibility: hidden;
+            left: 0%;
+            transition: 0.5s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .card:hover .content {
+            opacity: 1;
+            visibility: visible;
+            left: 20%;
+            transition: 0.5s;
+
+        }
+
+        .card .content h2 {
+
+            font-family: 'Potta One';
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 2em;
+            line-height: 1em;
+        }
+
+        .card .content p {
+
+            color: #ffffff;
+
+
+        }
+
+
+        @media(max-width: 991px) {
+
+            .card {
+                position: absolute;
+                max-height: 385px;
+                max-width: 400px;
+                transition: 1s;
+            }
+
+
+
+            .card img {
+
+                left: 20%;
+                max-height: 410px;
+
+
+            }
+
+            .card h2 {
+                margin-top: 5%;
+                visibility: visible;
+
+                font-size: 2em;
+            }
+
+            .card .content {
+                opacity: 1;
+                left: 20%;
+                font-size: medium;
+                margin-left: 12%;
+                visibility: visible;
+                padding-left: 20px;
+
+            }
+
+        }
+
+
+
+        @media(max-width: 420px) {
+
+            .card .content {
+
+                padding: 20px;
+                visibility: visible;
+
+            }
+
+        }
+
+
+
+        .skill {
+
+            position: absolute;
+            width: 800px;
+            height: 600px;
+            margin: flex;
+            top: 230%;
+
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 20px;
+
+            background: linear-gradient(135deg, #061161, #780206);
+
+
+        }
+
+        .skill img {
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 750px;
+            transition: 0.5s;
+            transform: translate(-50%);
+
+        }
+
+        .skill:hover img {
+
+            left: 15%;
+            height: 90vh;
+        }
+
+
+        .skill .cont h2 {
+            transition: 0.5s;
+            left: 30%;
+            visibility: hidden;
+            font-family: 'Potta One';
+            color: #ffffff;
+            padding: 20px 20px 20px 40px;
+
+            font-size: 2.5em;
+            line-height: 1em;
+            position: relative;
+            width: 70%;
+            opacity: 0;
+        }
+
+        .skill:hover h2 {
+            opacity: 1;
+            visibility: visible;
+            left: 34%;
+
+            transition: 0.5s;
+
+        }
+
+
+
+
+        .skill .cont p {
+            transition: 0.5s;
+            top: 20%;
+            left: 30%;
+            visibility: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: chartreuse;
+            padding-left: 20px;
+            margin-left: 10px;
+            font-size: 22px;
+
+
+            position: relative;
+            width: 60%;
+            opacity: 0;
+
+        }
+
+
+
+        .skill:hover .cont p {
+            left: 35%;
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+
+
+
+        @media(max-width: 991px) {
+
+            .skill {
+                position: absolute;
+                max-height: 550px;
+                max-width: 400px;
+                transition: 1s;
+            }
+
+
+
+            .skill img {
+
+                left: 15%;
+                max-height: 450px;
+
+
+            }
+
+            .skill .cont {
+                left: 0%;
+            }
+
+            .skill .cont h2 {
+
+                visibility: visible;
+                opacity: 1;
+
+                left: 35%;
+                margin-left: 5px;
+                font-size: 2em;
+            }
+
+            p {
+                left: 0%;
+            }
+
+            .skill .cont p {
+                opacity: 1;
+                left: 35%;
+                font-size: medium;
+                margin-bottom: 1%;
+
+                margin-left: 6%;
+                padding-right: 4%;
+                visibility: visible;
+
+
+
+            }
+
+            .footer p {
+
+                background-color: #000000;
+                text-align: center;
+                height: 100px;
+                bottom: 0%;
+                
+            }
+
+
+
+        }
+
+
+
+        .footer {
+
+            width: 100%;
+            background-color: black;
+            max-height: 120px;
+            position: absolute;
+            top: 340%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+
+
+            /* border: 3px solid #ffffff;*/
+            opacity: .8;
+
+
+        }
+
+        .footer hr {
+            background-color: #ffffff;
+
+        }
+
+        .footer p {
+
+            background-color: #000000;
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+    <div class="wrapper">
+
+        <div class="bg">
+
+            <div class="hd">
+
+                <h4>SYED WAJAHAT ALI</h4>
+                <h2> A PROGRAMMING INSECT IN HIS OWN VIRTUAL WORLD </h2>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="content">
+            <h2> MY SELF</h2>
+            <p>
+                <b>Hey everyone</b>,<br> I am doing bechelors in computer science, I also work as an <strong>Android
+                    developer</strong> as well as I am also familiar with <strong>Web designing</strong>.I can design
+                creative sites for you and develop Android apps for your business.
+                I like to turn my ideas into apps.
+            </p>
+
+
+        </div>
+        <img src="pic3.png" alt="">
+
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="cont">
+            <h2>SKILLS</h2>
+
+
+            <p style=" font-weight: 700">Web Designing</p>
+            <p style="color: #ffffff;"> Designing has always been my favourite part,
+                I have good web designing skills, I am currently working with <b>Html,CSS</b> & <b>Bootstrap</b>.
+                I can design awsome responsive websites.
+
+
+            </p>
+
+            <p style=" font-weight: 700">Android App Development</p>
+            <p style="color: #ffffff;"> I have developed apps with
+                Java as well as Kotlin. I have strong programming sense of <b>Java</b> and <b>Kotlin</b>.
+
+
+            </p>
+
+            <p style=" font-weight: 700">Database Servers</p>
+            <p style="color: #ffffff;"> I have strong knowlege of relational databases like <b>SQlite</b>
+                and online databases like <b>MYSQL</b> and <b>Firebase</b>
+
+            </p>
+
+        </div>
+
+
+        <img src="pic5.png" alt="">
+
+    </div>
+
+
+
+    <div class="footer">
+        <hr>
+        <p style="padding-top: 10px; color: #fafafa; font-family: 'Potta One';"> Some where between dreams and
+            accomplishment </p>
+        <hr>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
